@@ -1,0 +1,42 @@
+﻿<Window x:Class="SGD.View.Login_User.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SGD.View.Login_User"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" ResizeMode="NoResize"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Background="#FF37495F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Bienvenue sur SGD" HorizontalAlignment="Left" Margin="194,46,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#FF93A0DE" Grid.ColumnSpan="2" />
+        <Image Source="/View/Login-User/Ressources/test.png" Margin="0,100,0,83" RenderTransformOrigin="2.657,0.395" />
+
+        <Label Content="Utilisateur :" HorizontalAlignment="Left" Margin="88,146,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="#FF93A0DE" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="240,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Background="#FF86E2EC" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="Mot de passe :" HorizontalAlignment="Left" Margin="88,216,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="#FF93A0DE" Grid.Column="1"/>
+        <Button x:Name="btn_connecter" Content="Connexion" HorizontalAlignment="Left" Margin="249,350,0,0" VerticalAlignment="Top" Width="176" Grid.Column="1" Grid.ColumnSpan="2" Cursor="Hand"/>
+        <Button x:Name="btn_passOubli" Content="Mot de passe oublié ?" HorizontalAlignment="Left" Margin="249,276,0,0" VerticalAlignment="Top" Width="176" Background="#FFB7673A" Grid.Column="1" Grid.ColumnSpan="2" Cursor="Hand"/>
+        <Button x:Name="btn_newUser" Content="Nouvel Utilisateur" HorizontalAlignment="Left" Margin="72,350,0,0" VerticalAlignment="Top" Width="176" Cursor="Hand"/>
+        <PasswordBox Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Margin="240,219,0,0" VerticalAlignment="Top" Width="191"  Background="#FF86E2EC"/>
+
+
+
+
+
+    </Grid>
+
+
+</Window>

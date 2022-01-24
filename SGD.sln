@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGD", "SGD\SGD.csproj", "{0EC605D5-E445-4C71-B4E9-5749C80FEB63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Présentation", "1.Présentation", "{E9DD763E-48CC-4ED6-ACB2-17079FAA54AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Traitement", "2. Traitement", "{8DFA73AC-60EF-4C29-93CE-943D55CB6F37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Persistance", "3. Persistance", "{4CFEC41D-94A3-4D6F-9830-B94B63470FA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EC605D5-E445-4C71-B4E9-5749C80FEB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC605D5-E445-4C71-B4E9-5749C80FEB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC605D5-E445-4C71-B4E9-5749C80FEB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC605D5-E445-4C71-B4E9-5749C80FEB63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0EC605D5-E445-4C71-B4E9-5749C80FEB63} = {E9DD763E-48CC-4ED6-ACB2-17079FAA54AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {384EB0DE-4959-480B-80E0-DF016E0470CE}
+	EndGlobalSection
+EndGlobal

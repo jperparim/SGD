@@ -1,0 +1,23 @@
+﻿<Window x:Class="SGD.View.Clients.ListClientPrint"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SGD.View.Clients"
+        mc:Ignorable="d"
+        Title="ListClientPrint" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid Background="#FF37495F">
+
+            <Label Content="Imprimer / Exporter Liste client" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#FF93A0DE" FontWeight="Bold" />
+
+
+            <Button x:Name="btn_imprimer" Content="Imprimer liste Client" HorizontalAlignment="Left" Margin="75,355,0,0" VerticalAlignment="Top" Width="176" Cursor="Hand"/>
+            <Button x:Name="btn_exporter" Content="Exporter Liste client" HorizontalAlignment="Left" Margin="75,318,0,0" VerticalAlignment="Top" Width="176" Background="#FF403AB7" Cursor="Hand" />
+            <Button x:Name="btn_Annuler" Content="Annuler" HorizontalAlignment="Left" Margin="582,355,0,0" VerticalAlignment="Top" Width="176" Background="#FFB7673A" Cursor="Hand" Click="btn_annulerUser_Click"/>
+
+        </Grid>
+
+    </Grid>
+</Window>

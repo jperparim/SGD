@@ -1,0 +1,128 @@
+﻿<Window x:Class="SGD.View.Chantier.ChantierView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SGD.View.Chantier"
+        mc:Ignorable="d"
+        Title="ChantierView" Height="950" Width="1201" ResizeMode="NoResize"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+
+
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left" Width="200" Background="#FF37495F" HorizontalAlignment="Left" >
+            <StackPanel Background="#FFE8C4C4" >
+
+            </StackPanel>
+            <Button
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                        Content="Tableau de bord" Height="40" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="20" Click="Button_Click">
+
+
+                <Button.Background>
+                    <SolidColorBrush Color="#FFE05B5B" Opacity="0.1"/>
+                </Button.Background>
+
+            </Button>
+
+            <Button
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                        Content="Agenda" Height="40" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="20" Cursor="Hand" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFE05B5B" Opacity="0.1"/>
+                </Button.Background>
+            </Button>
+
+
+
+
+            <Button
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                        Content="Mon compte" Height="40" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="20" Click="Button_Click_1" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFE05B5B" Opacity="0.1"/>
+                </Button.Background>
+            </Button>
+
+
+            <Button  
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                        Content="Paramètre" Height="40" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="20" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFE05B5B" Opacity="0.1"/>
+                </Button.Background>
+            </Button>
+
+        </StackPanel>
+
+
+        <Grid Background="#FFE0DBDB" Width="1000">
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="181*"/>
+                <RowDefinition Height="453*"/>
+            </Grid.RowDefinitions>
+
+
+
+
+            <Rectangle HorizontalAlignment="Center" Height="75" Stroke="Black" VerticalAlignment="Top" Width="1000" Fill="#FF37495F"/>
+            <TextBlock HorizontalAlignment="Left" Margin="19,21,0,0" Text="Bienvenue " VerticalAlignment="Top" Width="106" Height="24" FontSize="16" Foreground="#FFF3EFEF"/>
+            <Button Content="Déconnexion" HorizontalAlignment="Left" Margin="839,17,0,0" VerticalAlignment="Top" Width="130" Background="#FF505C72" BorderBrush="{x:Null}" Height="32" />
+            <Rectangle HorizontalAlignment="Center" Height="73"  VerticalAlignment="Top" Width="916" Fill="#FF1675C5" Margin="0,105,0,0" />
+            <TextBlock HorizontalAlignment="Left" Margin="57,120,0,0" Text="Liste des chantiers" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="White" FontFamily="Calibri" Height="44" Width="315"/>
+            <Button Content="Ajouter un nouveau chantier" HorizontalAlignment="Left" Margin="461,126,0,0" VerticalAlignment="Top" Background="#FFCCBFE4" Foreground="#DD000000" BorderBrush="{x:Null}" Height="32" Width="246" Click="Button_Click_3"/>
+            <Button Content="Imprimer liste chantier" HorizontalAlignment="Left" Margin="731,126,0,0" VerticalAlignment="Top" Background="#FFCCBFE4"
+                    Foreground="#DD000000" BorderBrush="{x:Null}" Height="32" Width="210" Click="Button_Click_2"/>
+
+
+
+            <DataGrid Margin="42,218,42,482" FontWeight="Normal" Grid.RowSpan="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="220" Header="Nom - Référence chantier" FontSize="24" FontWeight="Bold"/>
+                    <DataGridTextColumn Width="180" Header="Travaux"/>
+                    <DataGridTextColumn Width="180" Header="Adresse"/>
+                    <DataGridTextColumn Width="180" Header="Responsable"/>
+                    <DataGridTextColumn Width="180" Header="N° Téléphone"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid Margin="42,221,42,255" Grid.Row="1" FontWeight="Normal">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="500" Header="Devis effectués" FontSize="24" FontWeight="Bold"/>
+                    <DataGridTextColumn Width="300" Header="Factures effectuées" FontSize="24" FontWeight="Bold"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <DataGrid Margin="42,452,42,43" Grid.Row="1" FontWeight="Normal">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="auto" Header="Informations / remarque sur le chantier" FontSize="24" FontWeight="Bold"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <TextBox x:Name="tbox_rechercher1" TextChanged="tbox_rechercher1_TextChanged" HorizontalAlignment="Left" Margin="42,183,0,0" Text="Rechercher client..." 
+                     TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Background="White" Height="30"/>
+
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,123 @@
+﻿<Window x:Class="SGD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SGD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1201" ResizeMode="NoResize"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <DockPanel>
+
+
+        <StackPanel DockPanel.Dock="Left" Width="200" Background="#FF37495F" >
+            <StackPanel Background="#FFE8C4C4" >
+
+            </StackPanel>
+            <Button
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                        Content="Tableau de bord" Height="40" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="20" >
+
+
+                <Button.Background>
+                    <SolidColorBrush Color="#FFE05B5B" Opacity="0.1"/>
+                </Button.Background>
+            </Button>
+
+            <Button
+
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                        Content="Agenda" Height="40" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="20" Cursor="Hand" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFE05B5B" Opacity="0.1"/>
+                </Button.Background>
+            </Button>
+
+
+
+
+            <Button
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                        Content="Mon compte" Height="40" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="20" Click="Button_Click_1" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFE05B5B" Opacity="0.1"/>
+                </Button.Background>
+            </Button>
+
+
+            <Button  
+                    Style="{StaticResource MaterialDesignRaisedLightButton}"
+                    
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                        Content="Paramètre" Height="40" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="20" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFE05B5B" Opacity="0.1"/>
+                </Button.Background>
+            </Button>
+
+        </StackPanel>
+        <Grid Background="#FFE0DBDB" Width="1000" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+
+            <Button Height="200" Width="200" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top"
+                    Content="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;CLIENTS"  Foreground="#FF37495F" FontFamily="Arial Black" Cursor="Hand" Margin="0,97,0,0" Click="Button_Client" />
+            <Image Source="/View/Home/Ressources/client2.png" Margin="75,130,75,107"/>
+
+            <Button Grid.Column="1" Height="200" Width="200" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top" Content="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;CHANTIER"
+                    FontFamily="Arial Black" Foreground="#FF37495F" Margin="0,97,0,0" Click="Button_Chantier"  />
+            <Image Source="/View/Home/Ressources/home.png" Margin="75,136,75,101" Grid.Column="1"/>
+
+            <Button Grid.Column="2" Height="200" Width="200" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top" Content="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;DEVIS" FontFamily="Arial Black" Foreground="#FF37495F" Margin="0,97,0,0" Click="Button_Click_2" />
+            <Image Source="/View/Home/Ressources/note.png" Margin="75,136,75,101" Grid.Column="2"/>
+
+            <Button Grid.Column="3" Height="200" Width="200" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top" Content="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;FACTURE" FontFamily="Arial Black" Foreground="#FF37495F" Margin="0,97,0,0" Click="Button_Click_3" />
+            <Image Source="/View/Home/Ressources/facture.png" Margin="75,136,75,101" Grid.Column="3"/>
+
+            <Rectangle HorizontalAlignment="Left" Height="35" Margin="-1,316,0,0" Stroke="Black" VerticalAlignment="Top" Width="1001" Grid.ColumnSpan="4" Grid.RowSpan="2" Fill="#FF37495F"/>
+            <Label Content="Informations" Grid.Column="1" HorizontalAlignment="Left" Margin="85,316,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="309" FontWeight="Bold"
+                FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="35" Grid.RowSpan="2" Foreground="#DDFBFAFA"/>
+            <Border BorderThickness="2" BorderBrush="Black" Grid.ColumnSpan="4" Margin="85,62,78,29" Grid.Row="1" Background="White">
+                <TextBox>test</TextBox>
+            </Border>
+            <Rectangle Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="75" Margin="-1,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="1001" Fill="#FF37495F"/>
+            <TextBlock HorizontalAlignment="Left" Margin="19,21,0,0" Text="Bienvenue " VerticalAlignment="Top" Width="106" Height="24" FontSize="16" Foreground="#FFF3EFEF"/>
+            <Button Content="Déconnexion" Grid.Column="3" HorizontalAlignment="Left" Margin="78,17,0,0" VerticalAlignment="Top" Width="130" Background="#FF505C72" BorderBrush="{x:Null}" Click="Button_Click"/>
+
+
+
+
+
+
+
+        </Grid>
+
+    </DockPanel>
+
+</Window>

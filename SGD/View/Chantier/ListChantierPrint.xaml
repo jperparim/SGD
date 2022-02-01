@@ -12,8 +12,8 @@
             <Label Content="Imprimer / Exporter Liste client" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#FF93A0DE" FontWeight="Bold" />
 
 
-            <Button x:Name="btn_imprimerChantier" Content="Imprimer liste Client" HorizontalAlignment="Left" Margin="75,355,0,0" VerticalAlignment="Top" Width="176" Cursor="Hand"/>
-            <Button x:Name="btn_exporterChantier" Content="Exporter Liste client" HorizontalAlignment="Left" Margin="75,318,0,0" VerticalAlignment="Top" Width="176" Background="#FF403AB7" Cursor="Hand" />
+            <Button x:Name="btn_imprimerChantier" Content="Imprimer liste chantier" HorizontalAlignment="Left" Margin="75,355,0,0" VerticalAlignment="Top" Width="176" Cursor="Hand"/>
+            <Button x:Name="btn_exporterChantier" Content="Exporter liste chantier" HorizontalAlignment="Left" Margin="75,318,0,0" VerticalAlignment="Top" Width="176" Background="#FF403AB7" Cursor="Hand" />
             <Button x:Name="btn_AnnulerChantier" Content="Annuler" HorizontalAlignment="Left" Margin="582,355,0,0" VerticalAlignment="Top" Width="176" Background="#FFB7673A" Cursor="Hand" Click="btn_Annuler_Click" />
         </Grid>
     </Grid>

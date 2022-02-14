@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="View\Devis\Cancel.png" />
+    <None Remove="View\Devis\save.png" />
+    <None Remove="View\Devis\send.png" />
     <None Remove="View\Home\personne.png" />
     <None Remove="View\Home\Ressources\client2.png" />
     <None Remove="View\Home\Ressources\facture.png" />
@@ -17,11 +20,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
     <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="View\Devis\Cancel.png" />
+    <Resource Include="View\Devis\save.png" />
+    <Resource Include="View\Devis\send.png" />
     <Resource Include="View\Home\personne.png" />
     <Resource Include="View\Home\Ressources\client2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

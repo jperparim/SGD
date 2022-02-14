@@ -12,7 +12,7 @@
      TextOptions.TextRenderingMode="Auto"
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="NewDevisView" Height="750" Width="800" ResizeMode="CanResize">
+        Title="NewDevisView" Height="750" Width="900" ResizeMode="CanResize">
     <DockPanel>
         <StackPanel DockPanel.Dock="Left" Width="180" Background="#FF37495F" HorizontalAlignment="Left" >
             <StackPanel Background="#FFE8C4C4" >
@@ -60,9 +60,9 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="259*"/>
-                <RowDefinition Height="335*"/>
-                <RowDefinition Height="140*"/>
+                <RowDefinition Height="149*"/>
+                <RowDefinition Height="148*"/>
+                <RowDefinition Height="70*"/>
             </Grid.RowDefinitions>
 
 
@@ -82,9 +82,32 @@
             <ComboBox HorizontalAlignment="Left" Margin="418,25,0,0" VerticalAlignment="Top" Width="160" Height="25"/>
             <Button Content="Nouveau client" HorizontalAlignment="Left" Margin="418,136,0,0" VerticalAlignment="Top" Width="160" Height="32"/>
             <Label Content="Info :" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Height="22" Width="53"/>
-            <Label Content="Référence Devis : " HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top"/>
-            
-            <Button Content="Effacer article" HorizontalAlignment="Left" Margin="418,227,0,0" VerticalAlignment="Top" Width="160" Background="#FFB78A3A"/>
+            <Label Content="Référence Devis : " HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Height="22" Width="121"/>
+
+            <Button Content="Effacer article" HorizontalAlignment="Left" Margin="418,225,0,0" VerticalAlignment="Top" Width="160" Background="#FFB78A3A" Height="32"/>
+
+
+            <DataGrid
+                ItemsSource="{Binding Items2}"
+                CanUserAddRows="False"
+                SelectionUnit="Cell"
+                SelectionMode="Extended" Margin="0,262,0,0" Grid.RowSpan="2" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="380" Header="Description" Binding="{Binding Description}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style>
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="80" Header="Unité" Binding="{Binding Unite}"/>
+                    <DataGridTextColumn Width="80" Header="Nombre" Binding="{Binding Unite}"/>
+                    <DataGridTextColumn Width="90" Header="Prix Unité" Binding="{Binding Unite}"/>
+                    <DataGridTextColumn Width="80" Header="Prix HT" Binding="{Binding Unite}"/>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
 
 
 

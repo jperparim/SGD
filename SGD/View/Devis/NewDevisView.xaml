@@ -12,45 +12,53 @@
      TextOptions.TextRenderingMode="Auto"
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="NewDevisView" Height="750" Width="900" ResizeMode="CanResize">
+        Title="Nouveau Devis" Height="950" Width="1100" ResizeMode="CanResize">
     <DockPanel>
         <StackPanel DockPanel.Dock="Left" Width="180" Background="#FF37495F" HorizontalAlignment="Left" >
             <StackPanel Background="#FFE8C4C4" >
 
 
             </StackPanel>
-            <Grid Height="357">
+            <Grid Height="752">
                 <!--<Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>-->
 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="70*"/>
+                    <RowDefinition Height="62*"/>
                     <RowDefinition Height="70"/>
-                    <RowDefinition Height="70*"/>
-                    <RowDefinition Height="70*"/>
-                    <RowDefinition Height="70*"/>
-
-
-
+                    <RowDefinition Height="62*"/>
+                    <RowDefinition Height="62*"/>
+                    <RowDefinition Height="62*"/>
+                    <RowDefinition Height="62*"/>
+                    <RowDefinition Height="62*"/>
+                    <RowDefinition Height="40*"/>
+                    <RowDefinition Height="40*"/>
+                    <RowDefinition Height="40*"/>
+                    <RowDefinition Height="40*"/>
+                    <RowDefinition Height="29*"/>
+                    <RowDefinition Height="62*"/>
+                    <RowDefinition Height="62*"/>
                 </Grid.RowDefinitions>
-                <Button x:Name="Sauver" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="158" Background="#FF6F87D6" Content="Sauver">
-                </Button>
-                <Image Source="/View/Devis/save.png" Margin="21,25,133,25"/>
 
-                <Button Content="Annuler" HorizontalAlignment="Center" Grid.Row="1" Height="39" Width="158" VerticalAlignment="Center" Background="#FF6F87D6" Margin="0,10,0,0"/>
-                <Image Source="/View/Devis/Cancel.png" Margin="12,18,128,9" Grid.Row="1"/>
+                <Button x:Name="Sauver" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="158" Background="#FF6F87D6" Content="Sauver"/>
 
-                <Button Content="Envoyer" HorizontalAlignment="Center" Grid.Row="2" Height="39" Width="158" VerticalAlignment="Center" Background="#FF6F87D6" Margin="0,5,0,0"/>
-                <Image Source="/View/Devis/send.png" Margin="20,19,120,14" Grid.Row="2"/>
+                <Button Content="Annuler" HorizontalAlignment="Center" Grid.Row="1" Height="40" Width="158" VerticalAlignment="Center" Background="#FF6F87D6"/>
 
-                <Button Content="Imprimer" HorizontalAlignment="Center" Grid.Row="3" Height="39" Width="158" VerticalAlignment="Center" Background="#FF6F87D6" Margin="0,5,0,0"/>
-                <Image Source="/View/Devis/send.png" Margin="17,7,129,12" Grid.Row="3"/>
+                <Button Content="Envoyer" HorizontalAlignment="Center" Grid.Row="2" Height="39" Width="158" VerticalAlignment="Top" Background="#FF6F87D6" Margin="0,14,0,0"/>
+
+                <Button Content="Imprimer" HorizontalAlignment="Center" Grid.Row="3" Height="39" Width="158" VerticalAlignment="Top" Background="#FF6F87D6" Margin="0,14,0,0"/>
 
 
-                <Button Content="Exporter" HorizontalAlignment="Center" Grid.Row="4" Height="39" Width="158" VerticalAlignment="Center" Background="#FF6F87D6" Margin="0,4,0,0"/>
-                <Image Source="/View/Devis/send.png" Margin="17,20,129,24" Grid.Row="4"/>
+                <Button Content="Exporter" HorizontalAlignment="Center" Grid.Row="4" Height="38" Width="158" VerticalAlignment="Center" Background="#FF6F87D6"/>
+
+                <Button Content="Tableau de bord" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" Width="158" Height="38" Click="home"/>
+                <Button Content="Agenda" HorizontalAlignment="Center" Grid.Row="8" VerticalAlignment="Center" Width="158" Height="38"/>
+                <Button Content="Mon compte" HorizontalAlignment="Center" Grid.Row="9" VerticalAlignment="Center" Width="158" Height="38"/>
+                <Button Content="Paramètre" HorizontalAlignment="Center" Grid.Row="10" VerticalAlignment="Center" Width="158" Height="38"/>
+
+
 
 
             </Grid>
@@ -60,40 +68,50 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="149*"/>
-                <RowDefinition Height="148*"/>
-                <RowDefinition Height="70*"/>
+                <RowDefinition Height="124*"/>
+                <RowDefinition Height="219*"/>
+                <RowDefinition Height="124*"/>
             </Grid.RowDefinitions>
 
-
-
-            <TextBlock HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="106" Height="24"
+            <TextBlock HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="106" Height="24"
                        FontSize="16" Foreground="Black" FontWeight="Normal" FontFamily="Segoe UI"><Run Language="fr-fr" Text="Chantier :"/><Run Text=" "/>
             </TextBlock>
-            <ComboBox HorizontalAlignment="Left" Margin="87,25,0,0" VerticalAlignment="Top" Width="160" Height="25"/>
-            <Button Content="Nouveau chantier" HorizontalAlignment="Left" Margin="87,136,0,0" VerticalAlignment="Top" Width="160" Height="32"/>
+
+            <ComboBox HorizontalAlignment="Left" Margin="87,81,0,0" VerticalAlignment="Top" Width="160" Height="25"/>
+            <StackPanel Grid.Row="0" Margin="87,111,609,50">
+                <!--Rajouter les BIND pour la liste des chantier-->
+            </StackPanel>
+
+
+            <Button Content="Nouveau chantier" HorizontalAlignment="Left" Margin="87,49,0,0" VerticalAlignment="Top" Width="160" Height="32" Click="Nouveau_Chantier"/>
 
 
 
 
-            <TextBlock HorizontalAlignment="Left" Margin="345,25,0,0" VerticalAlignment="Top" Width="106" Height="24"
+            <TextBlock HorizontalAlignment="Left" Margin="603,81,0,0" VerticalAlignment="Top" Width="106" Height="24"
                        FontSize="16" Foreground="Black" FontWeight="Normal" FontFamily="Segoe UI"><Run Language="fr-fr" Text="Client :"/><Run Text=" "/>
             </TextBlock>
-            <ComboBox HorizontalAlignment="Left" Margin="418,25,0,0" VerticalAlignment="Top" Width="160" Height="25"/>
-            <Button Content="Nouveau client" HorizontalAlignment="Left" Margin="418,136,0,0" VerticalAlignment="Top" Width="160" Height="32"/>
-            <Label Content="Info :" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Height="22" Width="53"/>
-            <Label Content="Référence Devis : " HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Height="22" Width="121"/>
+            <ComboBox HorizontalAlignment="Left" Margin="676,81,0,0" VerticalAlignment="Top" Width="160" Height="25"/>
 
-            <Button Content="Effacer article" HorizontalAlignment="Left" Margin="418,225,0,0" VerticalAlignment="Top" Width="160" Background="#FFB78A3A" Height="32"/>
+            <StackPanel Grid.Row="0" Margin="590,111,84,50">
+                <!--Rajouter les BIND pour la liste des clients-->
+            </StackPanel>
+
+
+            <Button Content="Nouveau client" HorizontalAlignment="Left" Margin="603,44,0,0" VerticalAlignment="Top" Width="160" Height="32" Click="Nouveau_Client"/>
+            <Label Content="Info :" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Height="22" Width="53"/>
+            <Label Content="Référence Devis : " HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Height="22" Width="121"/>
+
+            <Button Content="Effacer article" HorizontalAlignment="Left" Margin="603,210,0,0" VerticalAlignment="Top" Width="160" Background="#FFB78A3A" Height="32"/>
 
 
             <DataGrid
                 ItemsSource="{Binding Items2}"
                 CanUserAddRows="False"
                 SelectionUnit="Cell"
-                SelectionMode="Extended" Margin="0,262,0,0" Grid.RowSpan="2" >
+                SelectionMode="Extended" Margin="0,248,0,0" Grid.RowSpan="2" >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Width="380" Header="Description" Binding="{Binding Description}">
+                    <DataGridTextColumn Width="550" Header="Description" Binding="{Binding Description}">
                         <DataGridTextColumn.ElementStyle>
                             <Style>
                                 <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
@@ -103,13 +121,30 @@
                     <DataGridTextColumn Width="80" Header="Unité" Binding="{Binding Unite}"/>
                     <DataGridTextColumn Width="80" Header="Nombre" Binding="{Binding Unite}"/>
                     <DataGridTextColumn Width="90" Header="Prix Unité" Binding="{Binding Unite}"/>
-                    <DataGridTextColumn Width="80" Header="Prix HT" Binding="{Binding Unite}"/>
-
+                    <DataGridTextColumn Width="*" Header="Prix HT" Binding="{Binding Unite}"/>
                 </DataGrid.Columns>
 
+
             </DataGrid>
+            <Label Content="Total HT" HorizontalAlignment="Left" Margin="16,5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="113" Height="25" FontWeight="Bold" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Margin="764,5,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
 
+            <Label Content="TVA " HorizontalAlignment="Left" Margin="16,34,0,0" Grid.Row="2" VerticalAlignment="Top" Width="113" Height="25" FontWeight="Bold" FontSize="18"/>
+            <!--TODO BINDING POUR LA TVA SELECTIONEE-->
+            <TextBox HorizontalAlignment="Left" Margin="100,34,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+
+            <TextBox HorizontalAlignment="Left" Margin="764,34,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+            <Label Content="Total TTC " HorizontalAlignment="Left" Margin="16,63,0,0" Grid.Row="2" VerticalAlignment="Top" Width="113" Height="25" FontWeight="Bold" FontSize="18"/>
+            <TextBox HorizontalAlignment="Left" Margin="764,63,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+
+            <DataGrid Margin="36,102,36,21" Grid.Row="2" FontWeight="Normal">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="auto" Header="Remarques / Informations supplémentaires sur le devis" FontSize="24" FontWeight="Bold"/>
+                </DataGrid.Columns>
+            </DataGrid>
 
         </Grid>
     </DockPanel>

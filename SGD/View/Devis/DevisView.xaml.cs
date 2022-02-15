@@ -51,5 +51,11 @@ namespace SGD.View.Devis
             ListDevisPrint devisprint = new ListDevisPrint();
             devisprint.Show();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            NewDevisView NouveauDevis = new NewDevisView();
+            NouveauDevis.Show();
+        }
     }
 }

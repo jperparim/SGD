@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SGD.View.Chantier;
+using SGD.View.Clients;
 
 namespace SGD.View.Devis
 {
@@ -22,6 +24,25 @@ namespace SGD.View.Devis
         public NewDevisView()
         {
             InitializeComponent();
+        }
+
+        private void Nouveau_Chantier(object sender, RoutedEventArgs e)
+        {
+            NewChantier NouveauChantier = new NewChantier();
+            NouveauChantier.Show();
+        }
+
+        private void Nouveau_Client(object sender, RoutedEventArgs e)
+        {
+            NewClient NouveauClient = new NewClient();
+            NouveauClient.Show();
+        }
+
+        private void home(object sender, RoutedEventArgs e)
+        {
+            MainWindow home = new MainWindow();
+            home.Show();
+            this.Hide();
         }
     }
 }

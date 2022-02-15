@@ -82,12 +82,15 @@
             </Grid.RowDefinitions>
 
 
-
+            
 
             <Rectangle HorizontalAlignment="Center" Stroke="Black" Width="1000" Fill="#FF37495F" Margin="0,0,0,83"/>
             <TextBlock HorizontalAlignment="Left" Margin="19,21,0,0" Text="Bienvenue " VerticalAlignment="Top" Width="106" Height="24" FontSize="16" Foreground="#FFF3EFEF"/>
             <Button Content="Déconnexion" HorizontalAlignment="Left" Margin="839,17,0,0" VerticalAlignment="Top" Width="130" Background="#FF505C72" BorderBrush="{x:Null}" Height="32" />
 
+            <Rectangle HorizontalAlignment="Left" Height="43" Margin="240,21,0,0" Stroke="Black" VerticalAlignment="Top" Width="418" Fill="#FF6E9597"/>
+            <TextBlock HorizontalAlignment="Left" Margin="355,28,0,0" Text="Nouveau client" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="White"/>
+            
             <Label Content="Nom :" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="#FF93A0DE" Height="30" Width="85" Grid.RowSpan="2"/>
             <TextBox HorizontalAlignment="Left" Margin="144,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Background="White" Height="25" Grid.RowSpan="2"/>
 

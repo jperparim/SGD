@@ -93,7 +93,7 @@
             <Rectangle HorizontalAlignment="Center" Height="73"  VerticalAlignment="Top" Width="916" Fill="#FF1675C5" Margin="0,105,0,0" />
             <TextBlock HorizontalAlignment="Left" Margin="57,120,0,0" Text="Liste Devis" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="White" FontFamily="Calibri" Height="44" Width="242"/>
             <Button Content="Nouveau Devis" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Background="#FFCCBFE4" Foreground="#DD000000"
-                    BorderBrush="{x:Null}" Height="32" Width="142"/>
+                    BorderBrush="{x:Null}" Height="32" Width="142" Click="Button_Click_3"/>
 
             <Button Content="Supprimer Devis" HorizontalAlignment="Left" Margin="598,126,0,0" VerticalAlignment="Top" Background="#FFCCBFE4" Foreground="#DD000000"
                 BorderBrush="{x:Null}" Height="32" Width="142"/>

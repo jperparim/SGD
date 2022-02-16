@@ -13,31 +13,32 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using SGD.View.Chantier;
 using SGD.View.Clients;
+using SGD.View.Devis;
 using SGD.View.Login_User;
-using SGD.View.Facture;
 
-namespace SGD.View.Devis
+namespace SGD.View.Facture
 {
     /// <summary>
-    /// Logique d'interaction pour NewDevisView.xaml
+    /// Logique d'interaction pour NewFactureView.xaml
     /// </summary>
-    public partial class NewDevisView : Window
+    public partial class NewFactureView : Window
     {
-        public NewDevisView()
+        public NewFactureView()
         {
             InitializeComponent();
         }
 
-        private void Nouveau_Chantier(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NewChantier NouveauChantier = new NewChantier();
-            NouveauChantier.Show();
+            NewChantier newChantier = new NewChantier();
+            newChantier.Show();
+
         }
 
         private void Nouveau_Client(object sender, RoutedEventArgs e)
         {
-            NewClient NouveauClient = new NewClient();
-            NouveauClient.Show();
+            NewClient newClient = new NewClient();
+            newClient.Show();
         }
 
         private void home(object sender, RoutedEventArgs e)
@@ -45,6 +46,12 @@ namespace SGD.View.Devis
             MainWindow home = new MainWindow();
             home.Show();
             this.Hide();
+        }
+
+        private void Nouveau_Chantier(object sender, RoutedEventArgs e)
+        {
+            NewChantier newChantier = new NewChantier();
+            newChantier.Show();
         }
 
         private void Profil(object sender, RoutedEventArgs e)

@@ -20,14 +20,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.6" />
+    <PackageReference Include="ControlzEx" Version="5.0.1" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="EntityFramework.fr" Version="6.2.0" />
+    <PackageReference Include="MaterialDesignColors" Version="2.0.4" />
     <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
     <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="View\Devis\Cancel.png" />
-    <Resource Include="View\Devis\save.png" />
-    <Resource Include="View\Devis\send.png" />
     <Resource Include="View\Home\personne.png" />
     <Resource Include="View\Home\Ressources\client2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

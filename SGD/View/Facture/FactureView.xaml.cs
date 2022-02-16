@@ -49,5 +49,19 @@ namespace SGD.View.Facture
             ListFacturePrint printfacture = new ListFacturePrint();
             printfacture.Show();
         }
+
+        private void New_Facture(object sender, RoutedEventArgs e)
+        {
+            NewFactureView newFacture = new NewFactureView();
+            newFacture.Show();
+            this.Hide();
+        }
+
+        private void NewDemandeAccompte(object sender, RoutedEventArgs e)
+        {
+            NewDemandeAccompte demandeAccompte = new NewDemandeAccompte();
+            demandeAccompte.Show();
+            this.Hide();
+        }
     }
 }

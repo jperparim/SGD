@@ -1,18 +1,18 @@
-﻿<Window x:Class="SGD.View.Devis.NewDevisView"
+﻿<Window x:Class="SGD.View.Facture.NewFactureView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SGD.View.Devis"
+        xmlns:local="clr-namespace:SGD.View.Facture"
         mc:Ignorable="d"
-        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        TextElement.FontWeight="Regular"
-        TextElement.FontSize="13"
-        TextOptions.TextFormattingMode="Ideal"
-        TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
-         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="Nouveau Devis" Height="950" Width="1100" ResizeMode="CanResize">
+            TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+            TextElement.FontWeight="Regular"
+            TextElement.FontSize="13"
+            TextOptions.TextFormattingMode="Ideal"
+            TextOptions.TextRenderingMode="Auto"
+            Background="{DynamicResource MaterialDesignPaper}"
+            FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Nouvelle Facture" Height="950" Width="1100" ResizeMode="CanResize">
     <DockPanel>
         <StackPanel DockPanel.Dock="Left" Width="180" Background="#FF37495F" HorizontalAlignment="Left" >
             <StackPanel Background="#FFE8C4C4" >
@@ -78,20 +78,24 @@
             </TextBlock>
 
             <ComboBox HorizontalAlignment="Left" Margin="87,81,0,0" VerticalAlignment="Top" Width="160" Height="25"/>
-            <StackPanel Grid.Row="0" Margin="87,111,609,50">
+            <StackPanel Grid.Row="0" Margin="36,111,626,50">
                 <!--Rajouter les BIND pour la liste des chantier-->
             </StackPanel>
+            <Button Content="Nouveau chantier" HorizontalAlignment="Left" Margin="87,44,0,0" VerticalAlignment="Top" Width="160" Height="32" Click="Nouveau_Chantier"/>
 
 
-            <Button Content="Nouveau chantier" HorizontalAlignment="Left" Margin="87,49,0,0" VerticalAlignment="Top" Width="160" Height="32" Click="Nouveau_Chantier"/>
-
+            <Button Content="Facture à partir du devis" HorizontalAlignment="Left" Margin="321,44,0,0" VerticalAlignment="Top" Width="204" Height="32" Background="#FF3A79B7"/>
+            <ComboBox HorizontalAlignment="Left" Margin="321,82,0,0" VerticalAlignment="Top" Width="204" Height="25"/>
+            <StackPanel Grid.Row="0" Margin="294,111,361,50">
+                <!--Rajouter les BIND pour la liste des chantier-->
+            </StackPanel>
 
 
 
             <TextBlock HorizontalAlignment="Left" Margin="603,81,0,0" VerticalAlignment="Top" Width="106" Height="24"
                        FontSize="16" Foreground="Black" FontWeight="Normal" FontFamily="Segoe UI"><Run Language="fr-fr" Text="Client :"/><Run Text=" "/>
             </TextBlock>
-            <ComboBox HorizontalAlignment="Left" Margin="676,81,0,0" VerticalAlignment="Top" Width="160" Height="25"/>
+            <ComboBox HorizontalAlignment="Left" Margin="676,80,0,0" VerticalAlignment="Top" Width="160" Height="25"/>
 
             <StackPanel Grid.Row="0" Margin="590,111,84,50">
                 <!--Rajouter les BIND pour la liste des clients-->
@@ -102,7 +106,7 @@
 
             <Label Content="Info :" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Height="22" Width="53"/>
 
-            <Label Content="Référence devis : " HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Height="22" Width="119"/>
+            <Label Content="Référence facture : " HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Height="22" Width="119"/>
             <TextBox HorizontalAlignment="Left" Margin="127,220,0,0" VerticalAlignment="Top" Width="120"/>
 
             <Label Content="Concerne :  " HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top" Height="22" Width="81"/>
@@ -148,7 +152,7 @@
 
             <DataGrid Margin="36,102,36,21" Grid.Row="2" FontWeight="Normal">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Width="auto" Header="Remarques / Informations supplémentaires sur le devis" FontSize="24" FontWeight="Bold"/>
+                    <DataGridTextColumn Width="auto" Header="Remarques / Informations supplémentaires sur la facture" FontSize="24" FontWeight="Bold"/>
                 </DataGrid.Columns>
             </DataGrid>
 

@@ -92,8 +92,11 @@
             <Button Content="Déconnexion" HorizontalAlignment="Left" Margin="839,17,0,0" VerticalAlignment="Top" Width="130" Background="#FF505C72" BorderBrush="{x:Null}" Height="32" />
             <Rectangle HorizontalAlignment="Center" Height="73"  VerticalAlignment="Top" Width="916" Fill="#FF1675C5" Margin="0,105,0,0" />
             <TextBlock HorizontalAlignment="Left" Margin="57,120,0,0" Text="Liste Facture" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="White" FontFamily="Calibri" Height="44" Width="242"/>
-            <Button Content="Nouvelle Facture" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Background="#FFCCBFE4" Foreground="#DD000000"
-                    BorderBrush="{x:Null}" Height="32" Width="142"/>
+            <Button Content="Nouvelle Facture" HorizontalAlignment="Left" Margin="338,126,0,0" VerticalAlignment="Top" Background="#FFCCBFE4" Foreground="#DD000000"
+                    BorderBrush="{x:Null}" Height="32" Width="142" Click="New_Facture"/>
+
+            <Button Content="Nouvelle demande d'accompte" HorizontalAlignment="Left" Margin="513,126,0,0" VerticalAlignment="Top" Background="#FFCCBFE4" Foreground="#DD000000"
+                    BorderBrush="{x:Null}" Height="32" Width="230" Click="NewDemandeAccompte" />
 
             <Button Content="Imprimer liste Facture" HorizontalAlignment="Left" Margin="762,126,0,0" VerticalAlignment="Top" Background="#FFCCBFE4" Foreground="#DD000000"
                 BorderBrush="{x:Null}" Height="32" Width="183" Click="Button_Click_2"/>
